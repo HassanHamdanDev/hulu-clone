@@ -7,7 +7,7 @@ import { forwardRef } from 'react';
 
 const Thumnail = forwardRef(({ result }: any, ref: any) => {
     return (
-        <div ref={ref} className='group p-3 cursor-pointer transition duration-200 ease-in transform sm:hover:scale-105 hover:z-50'>
+        <div ref={ref} className='group p-3 cursor-pointer transition duration-200 ease-in transform sm:hover:scale-105 hover:z-50 3xl:max-w-[30rem]'>
             <Image
                 layout='responsive'
                 src={`https://image.tmdb.org/t/p/original/${result.backdrop_path || result.poster_path || result.profile_path}`}
